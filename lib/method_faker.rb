@@ -28,8 +28,8 @@ module MethodFaker
     return [instance_method(method_name), :private] if private_instance_methods.include? method_name
     fail '#{method_name} it\'s not a method in class: #{self}'
   end
-private
 
+private
   def block_fake(method_name, proc, block)
     standard_fake(method_name, proc)
     block.call
