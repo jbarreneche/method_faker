@@ -2,13 +2,16 @@ h1. Method Faker
 
 A simple way to shadow methods with your own functionality that can be easily reversed.
 
-<code lang='ruby'>
-    MyTrickyClass.extend MethodFaker
+bc..  MyTrickyClass.extend MethodFaker
     MyTrickyClass.fake :some_tricky_method, Proc.new { do_something_simpler }
     _... work with other classes wich use MyTrickyClass objects..._
     MyTrickyClass.restore :some_tricky_method # restore the original behaviour
     _... work with other classes wich use MyTrickyClass objects..._
-</code>
+
+
+h2. Original Idea
+
+lucasefe and me
 
 h2. License
 
