@@ -8,8 +8,6 @@ bc..  MyTrickyClass.extend MethodFaker
     MyTrickyClass.restore :some_tricky_method # restore the original behaviour
     _... work with other classes wich use MyTrickyClass objects..._
 
-p.
-
 h2. Original Idea
 
 lucasefe and me
